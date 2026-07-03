@@ -1,0 +1,39 @@
+{
+  "siteUrl": "https://ramabenkhalifa.com",
+  "siteName": "Reforming a Party Girl",
+  "authorName": "Rama Ben Khalifa",
+  "tagline": "Reforming a Party Girl",
+  "volume": "VOL. 01",
+  "heroKicker": "CONFESSIONS · CHAOS · COMING BACK",
+  "description": "Rama Ben Khalifa is reforming a party girl — first-person stories about chaos, accountability, astrology, and the slow work of becoming someone new, in her own words.",
+  "chart": "SUN: GEMINI · MOON: SCORPIO · AC: SCORPIO",
+  "manifesto": [
+    "My name is Rama Ben Khalifa. Until a few days ago I would have called myself a party girl, present tense. I'm not sure that's honest anymore, and I'm not sure it's fully untrue either — which is the whole point of this site.",
+    "I'm a Gemini sun, which means I contain multitudes and lose track of most of them. I'm a Scorpio moon and Scorpio rising, which means whatever I feel, I feel at full volume, and whatever I hide, I hide well. Type B on paper. Borderline underneath. Chaotic by instinct, and, I'd like to think, still capable of class.",
+    "I've been in and out of this lifestyle for years — on for a while, off for a while, on again. It has cost me things. Friendships. Trust. At points, my own legal standing. This isn't a redemption tour and I'm not asking to be forgiven on a schedule. I just got tired of other people telling my story worse than I could tell it myself.",
+    "So: a magazine, not a diary. Stories you can click into, one at a time, the way you'd flip to a page that has your name on it. Some are funny. Some are not flattering. All of them are mine.",
+    "This is Rama Ben Khalifa, reforming a party girl, in real time, in public, on purpose."
+  ],
+  "social": {
+    "instagram": "#",
+    "tiktok": "#",
+    "email": "mailto:hello@ramabenkhalifa.com"
+  },
+  "ui": {
+    "stories": "STORIES",
+    "about": "ABOUT",
+    "theStories": "The Stories",
+    "published": "PUBLISHED",
+    "readStory": "READ THE STORY",
+    "backToStories": "BACK TO ALL STORIES",
+    "aboutOf": "ABOUT RAMA BEN KHALIFA",
+    "birthChart": "BIRTH CHART",
+    "sun": "Sun",
+    "moon": "Moon",
+    "rising": "Rising",
+    "type": "Type",
+    "typeValue": "B, chaotic-classy",
+    "langSelf": "EN",
+    "langOther": "SV"
+  }
+}

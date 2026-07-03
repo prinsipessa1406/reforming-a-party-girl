@@ -1,0 +1,39 @@
+{
+  "siteUrl": "https://ramabenkhalifa.com",
+  "siteName": "Reforming a Party Girl",
+  "authorName": "Rama Ben Khalifa",
+  "tagline": "Reforming a Party Girl",
+  "volume": "VOL. 01",
+  "heroKicker": "BEKÄNNELSER · KAOS · COMEBACK",
+  "description": "Rama Ben Khalifa reformerar en partytjej — berättelser i jagform om kaos, ansvar, astrologi och det långsamma arbetet med att bli någon ny, i hennes egna ord.",
+  "chart": "SOL: TVILLINGARNA · MÅNE: SKORPIONEN · AC: SKORPIONEN",
+  "manifesto": [
+    "Jag heter Rama Ben Khalifa. Fram tills för några dagar sedan hade jag kallat mig själv partytjej, i presens. Jag är inte säker på att det är ärligt längre, och jag är inte säker på att det är helt osant heller — vilket är hela poängen med den här sidan.",
+    "Jag är en Tvilling-sol, vilket betyder att jag rymmer flera versioner av mig själv samtidigt och tappar bort de flesta av dem. Jag är en Skorpion-måne med Skorpion i Ascendenten, vilket betyder att allt jag känner, känner jag på max volym, och allt jag döljer, döljer jag bra. Typ B på pappret. Borderline under ytan. Kaotisk av naturen — och, vill jag tro, fortfarande kapabel till klass.",
+    "Jag har hoppat in och ut ur den här livsstilen i flera år — på ett tag, av ett tag, på igen. Det har kostat mig saker. Vänskaper. Förtroende. Vid vissa tillfällen, mitt eget juridiska anseende. Det här är ingen försoningsturné och jag ber inte om förlåtelse enligt ett schema. Jag blev bara trött på att andra berättade min historia sämre än jag själv kunde.",
+    "Så: en tidning, inte en dagbok. Historier du kan klicka dig in i, en i taget, ungefär som att bläddra till en sida med ditt eget namn på. Vissa är roliga. Vissa är inte smickrande. Alla är mina.",
+    "Det här är Rama Ben Khalifa, som reformerar en partytjej, i realtid, offentligt, med flit."
+  ],
+  "social": {
+    "instagram": "#",
+    "tiktok": "#",
+    "email": "mailto:hello@ramabenkhalifa.com"
+  },
+  "ui": {
+    "stories": "HISTORIER",
+    "about": "OM MIG",
+    "theStories": "Berättelserna",
+    "published": "PUBLICERADE",
+    "readStory": "LÄS HISTORIEN",
+    "backToStories": "TILLBAKA TILL ALLA HISTORIER",
+    "aboutOf": "OM RAMA BEN KHALIFA",
+    "birthChart": "FÖDELSEHOROSKOP",
+    "sun": "Sol",
+    "moon": "Måne",
+    "rising": "Ascendent",
+    "type": "Typ",
+    "typeValue": "B, kaotisk-klassig",
+    "langSelf": "SV",
+    "langOther": "EN"
+  }
+}
