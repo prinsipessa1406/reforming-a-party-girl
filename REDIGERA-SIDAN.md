@@ -1,5 +1,17 @@
 # Så här redigerar du sidan själv
 
+## Förhandsgranska sidan (se hur den ser ut just nu)
+
+Dubbelklicka på **`Forhandsgranska-sidan.command`** i sidans mapp. Din webbläsare öppnas automatiskt på `http://localhost:8888` och visar sidan precis som den ser ut just nu.
+
+Gjorde du eller jag en ändring? Gå tillbaka till den fliken och tryck **Cmd+R** (vanlig omladdning räcker — det är en riktig lokal webbserver, inte en fil du dubbelklickat, så den cachar inte på samma envisa sätt). Är du osäker om ändringen syns, gör en hård omladdning: **Cmd+Shift+R**.
+
+När du är klar, gå tillbaka till Terminal-fönstret som öppnades och tryck Enter för att stänga förhandsgranskningen.
+
+**Om du vill ändra hur sidan ser ut** (färger, mellanrum, layout): enklast är att beskriva för mig vad du ser och vad du vill ändra ("bakgrunden känns för grå", "rubriken är för stor på mobil") medan du har förhandsgranskningen öppen — jag gör själva CSS-ändringen. Vill du testa att ändra färger själv finns en kort guide längre ner i det här dokumentet.
+
+---
+
 ## Det enkla sättet: redigeraren (rekommenderat)
 
 Dubbelklicka på **`Starta-redigeraren.command`** i sidans mapp. Ett Terminal-fönster öppnas kort (det är normalt, bara låt det stå) och din webbläsare öppnas automatiskt på en sida med alla dina historier.
