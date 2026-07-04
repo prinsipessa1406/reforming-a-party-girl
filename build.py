@@ -455,7 +455,23 @@ def write(path, content):
     print("wrote", os.path.relpath(path, ROOT))
 
 
+def clean_orphaned_stories():
+    """Remove generated story folders whose slug no longer exists in stories.json
+    (e.g. after a story was deleted from the JSON by hand or via editor.py)."""
+    import shutil
+    for locale in LOCALES:
+        current_slugs = {s["slug"] for s in CONTENT[locale]["stories"]}
+        stories_dir = os.path.join(ROOT, locale_prefix(locale), "stories")
+        if not os.path.isdir(stories_dir):
+            continue
+        for name in os.listdir(stories_dir):
+            if name not in current_slugs:
+                shutil.rmtree(os.path.join(stories_dir, name))
+                print("removed orphaned", os.path.join(locale_prefix(locale), "stories", name))
+
+
 if __name__ == "__main__":
+    clean_orphaned_stories()
     for locale in LOCALES:
         build_index(locale)
         build_about(locale)

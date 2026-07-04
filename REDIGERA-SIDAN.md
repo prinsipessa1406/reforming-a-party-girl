@@ -1,11 +1,31 @@
 # Så här redigerar du sidan själv
 
-Du behöver inte kunna programmera. Du behöver bara:
+## Det enkla sättet: redigeraren (rekommenderat)
 
+Dubbelklicka på **`Starta-redigeraren.command`** i sidans mapp. Ett Terminal-fönster öppnas kort (det är normalt, bara låt det stå) och din webbläsare öppnas automatiskt på en sida med alla dina historier.
+
+Där kan du:
+- **+ Ny historia** — fyll i ett formulär (titel, kategori, text på både svenska och engelska), klicka "Spara och bygg om". Ingen JSON, ingen kod.
+- **Redigera** en befintlig historia — samma formulär, förifyllt.
+- **Ta bort historia** — en knapp längst ner i redigeringsvyn.
+- **Bygg om sidan** — om du vill trycka en gång till utan att ändra något.
+- **Skicka till GitHub** — gör `git add` + `commit` + `push` åt dig, ett klick.
+
+När du är klar, stäng bara webbläsarfliken och tryck Enter i Terminal-fönstret för att stänga det.
+
+**Att tänka på:** bara en historia kan vara "Framhävd" i taget (den stora rutan överst) — kryssar du i den på en ny visas den istället för den gamla. Kategorin måste vara en av de fem befintliga (visas i en rullista i formuläret).
+
+---
+
+## Det manuella sättet (om du vill gå in i filerna direkt)
+
+Allt nedan är samma sak som redigeraren gör åt dig — bra att veta om du vill finjustera något redigeraren inte har ett fält för (t.ex. färger), eller om du är nyfiken på hur det hänger ihop.
+
+Du behöver:
 1. **En textredigerare** — TextEdit (finns redan på din Mac) funkar, men [Visual Studio Code](https://code.visualstudio.com) (gratis) är mycket enklare eftersom den förstår filformatet och varnar om du råkar radera ett kommatecken.
 2. **Terminal-appen** (finns redan på din Mac, sök på "Terminal" i Spotlight).
 
-Efter ÄNDRING du gör, kör du alltid samma kommando i Terminal för att bygga om sidan:
+Efter varje ändring du gör, kör du samma kommando i Terminal för att bygga om sidan:
 
 ```
 cd ~/reforming-a-party-girl
@@ -16,7 +36,7 @@ Det tar en sekund och skriver ut "Done. X story pages built..." när det är kla
 
 ---
 
-## Ändra text som redan finns
+### Ändra text som redan finns
 
 All text bor i fyra filer:
 
@@ -31,7 +51,7 @@ All text bor i fyra filer:
 
 ---
 
-## Lägga till en ny historia
+### Lägga till en ny historia
 
 1. Öppna `content/sv/stories.json`.
 2. Kopiera ett helt befintligt historia-block (allt mellan en `{` och matchande `}`).
@@ -45,7 +65,7 @@ All text bor i fyra filer:
 
 En ny sida skapas automatiskt på `stories/din-slug/` — inget annat behöver ändras.
 
-### Lägga till en helt ny kategori
+#### Lägga till en helt ny kategori
 
 Öppna `build.py`, hitta listan `CATEGORIES` nära toppen, och lägg till en rad i samma format:
 
@@ -57,7 +77,7 @@ Kör `python3 build.py` — en ny sida på `category/min-nya-kategori/` skapas a
 
 ---
 
-## Byta eller lägga till en bild
+### Byta eller lägga till en bild
 
 1. Lägg bildfilen (jpg eller png) i mappen `assets/img/`.
 2. I stories.json, lägg till (eller ändra) raden `"image": "filnamn.jpg",` i historian du vill koppla bilden till.
@@ -67,7 +87,7 @@ Om en bild verkar felbeskuren (visar fel del av bilden), säg till mig vad som �
 
 ---
 
-## Ändra färger
+### Ändra färger
 
 Högst upp i `assets/css/style.css` finns en lista med färger, t.ex.:
 
@@ -80,7 +100,7 @@ Byt ut hex-koden (t.ex. `#c9457c`) mot en annan, spara, kör `python3 build.py`.
 
 ---
 
-## Vad du INTE behöver röra
+### Vad du INTE behöver röra
 
 Filen `build.py` är "motorn" som sätter ihop allt — den behöver du aldrig öppna för vanliga ändringar (text, bilder, färger). Om du vill ändra själva layouten (t.ex. flytta var saker står på sidan) är det bättre att fråga mig, eller en utvecklare, eftersom ett litet misstag där kan göra att hela sidan slutar bygga.
 
@@ -88,7 +108,9 @@ Filen `build.py` är "motorn" som sätter ihop allt — den behöver du aldrig �
 
 ## Spara ändringar i Git / GitHub
 
-Sidan ligger i ett Git-repo kopplat till `github.com/prinsipessa1406/reforming-a-party-girl`. Varje gång du gjort en ändring och kört `python3 build.py`, spara och skicka upp den så här i Terminal:
+Om du använder redigeraren: klicka bara **"Skicka till GitHub"** på startsidan, så är det gjort.
+
+Om du redigerat filerna manuellt: sidan ligger i ett Git-repo kopplat till `github.com/prinsipessa1406/reforming-a-party-girl`. Varje gång du gjort en ändring och kört `python3 build.py`, spara och skicka upp den så här i Terminal:
 
 ```
 cd ~/reforming-a-party-girl
